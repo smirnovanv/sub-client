@@ -1,0 +1,23 @@
+.submitButton {
+    background-color: transparent !important;
+    border: 1px solid blue !important;
+    width: 120px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2) 50%, transparent 50%) !important;
+    background-size: 200% 100% !important;
+    background-position: 100% !important;
+    transition: background-position 330ms ease !important;
+}
+
+.submitButton:hover {
+    background-position: 0 100% !important;
+}
+
+.submitButton:disabled {
+    background-color: transparent !important;
+    border: 1px solid #d3d3d3 !important;
+    width: 120px !important;
+    display: block !important;
+    margin: 0 auto !important;
+}

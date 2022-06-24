@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TextField } from "@mui/material";
-import styles from "../styles/form-field.module.scss";
+import styles from "../styles/form-field.module.css";
 
 const FormField = ({ label, errorText, pattern, handleErrorState, name }) => {
   const [error, setError] = useState(false);

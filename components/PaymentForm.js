@@ -1,4 +1,4 @@
-import { Paper, Button } from "@mui/material";
+import { Paper } from "@mui/material";
 import FormField from "./FormField";
 import { useState } from "react";
 import {
@@ -11,7 +11,8 @@ import {
   amountPattern,
   amountPaternErrorText,
 } from "./consts";
-import styles from "../styles/payment-form.module.scss";
+import SubmitButton from "./SubmitButton";
+import styles from "../styles/payment-form.module.css";
 
 const PaymentForm = () => {
   const [formStatus, setFormStatus] = useState({
@@ -78,13 +79,13 @@ const PaymentForm = () => {
           pattern={amountPattern}
           handleErrorState={handleErrorState}
         />
-        <Button
+        <SubmitButton
           disabled={isDisabled}
           type="submit"
           className={styles.purchaseButton}
         >
           Оплатить
-        </Button>
+        </SubmitButton>
       </form>
     </Paper>
   );
